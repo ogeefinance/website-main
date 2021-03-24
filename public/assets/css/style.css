@@ -1913,6 +1913,7 @@ body.loaded .preloader {
 }
 .growth {
     width: 100vw;
+    margin-top: 3rem;
 }
 .growth__wrapper {
     background-color: #f0f7fc;
