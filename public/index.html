@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Ogee Finance Swap AMM dex and Yield Farm on Huobi ECO Chain</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+  <!--stylesheet-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!--preloader start-->
+  <!--preloader end-->
+
+  <!--header section start-->
+  <header class="header header-2">
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <a href="index.html">
+            <img src="assets/images/logo.svg" alt="Ogee logo" style="height: 48px;">
+          </a>
+        </div>
+        <div class="header__nav">
+          <ul class="header__nav-primary">
+            <li class="nav__dropdown dropdown-wrapper" id="menu-1">
+              <a href="#" class="nav__dropdown-info dropdown-info">
+                Products
+              </a>
+              <ul class="nav__dropdown-box dropdown-box">
+                <li><a href="#">Swap</a></li>
+                <li><a href="#">Farm</a></li>
+                <li><a href="#">Lottery</a></li>
+                <li><a href="#">IDO</a></li>
+                <li><a href="#">Chart</a></li>
+              </ul>
+            </li>
+            <li><a href="#feature">Feature</a></li>
+            <li class="nav__dropdown dropdown-wrapper" id="menu-2">
+              <a href="#" class="nav__dropdown-info dropdown-info">
+                How to Use
+              </a>
+              <ul class="nav__dropdown-box dropdown-box">
+                <li><a href="#how-to-connect">How to Connect</a></li>
+                <li><a href="#">How to Swap</a></li>
+                <li><a href="#">How to Farming</a></li>
+                <li><a href="#">How to Join Lottery</a></li>
+              </ul>
+            </li>
+            <li><a href="#roadmap">Roadmap</a></li>
+            <li class="nav__dropdown dropdown-wrapper" id="menu-3">
+              <a href="#" class="nav__dropdown-info dropdown-info">
+                More
+              </a>
+              <ul class="nav__dropdown-box dropdown-box">
+                <li><a href="#">Docs</a></li>
+                <li><a href="https://github.com/ogeefinance">Github</a></li>
+                <li><a href="#">Audit (Process)</a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </li>
+          </ul>
+          <span><i class="fas fa-times"></i></span>
+        </div>
+        <div class="header__bars">
+          <div class="header__bars-bar header__bars-bar-1"></div>
+          <div class="header__bars-bar header__bars-bar-2"></div>
+          <div class="header__bars-bar header__bars-bar-3"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--header section end-->
+
+  <!--hero section start-->
+  <section class="hero hero-2">
+    <div class="hero__wrapper">
+      <div class="container">
+        <div class="row align-items-lg-center">
+          <div class="col-lg-6 order-2 order-lg-1">
+            <h1 class="main-heading color-black">Ogee Finance</h1>
+            <p class="paragraph">The Best AMM and Yield Farm on Huobi ECO Chain.</p>
+            <div class="download-buttons">
+              <a href="#" class="links">
+                 <img src="assets/images/swap.svg" alt="Swap"  style="height: 42px;">
+                <div class="button-content">
+                  <h1 class="color-white">AMM</h1>
+                </div>
+              </a>
+              <a href="#" class="links">
+                  <img src="assets/images/farm.svg" alt="Farm"  style="height: 42px;">
+                <div class="button-content">
+                  <h1 class="color-white">Farm</span></h1>
+                </div>
+              </a>
+            </div>
+              <div class="paragraph">
+                <p>Built on</p>
+                <img src="assets/images/heco.svg" alt="Huobi ECO Chain (HECO)"  style="height: 48px;">
+              </div>
+            <div class="row align-items-lg-center">
+              <div class="col-lg-4">
+                <p>Deployed on</p>
+                <img src="assets/images/ipfs.svg" alt="IPFS"  style="height: 48px;">
+              </div>
+              <div class="col-lg-4">
+                <p>Audited by</p>
+                <img src="assets/images/process.png" alt="Audit"  style="height: 48px;">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2">
+            <div class="questions-img hero-img">
+              <img src="assets/images/ogee.svg" alt="Ogee Finance">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--hero section end-->
+
+  <!--feature section start-->
+  <section class="feature" id="feature">
+    <div class="container">
+      <h2 class="section-heading color-black">Get surprised by amazing features.</h2>
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="feature__box feature__box--1">
+            <div class="icon icon-1">
+              <img src="assets/images/swap.svg" alt="Swap" style="height: 128px;">
+            </div>
+            <div class="feature__box__wrapper">
+              <div class="feature__box--content feature__box--content-1">
+                <h3>AMM DEX</h3>
+                <p class="paragraph dark">Efficient AMM DEX for your swapping needs, ready at your fingertips. Just connect and swap!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="feature__box feature__box--2">
+            <div class="icon icon-2">
+              <img src="assets/images/farm.svg" alt="Yield Farm" style="height: 128px;">
+            </div>
+            <div class="feature__box__wrapper">
+              <div class="feature__box--content feature__box--content-2">
+                <h3>Yield Farm</h3>
+                <p class="paragraph dark">Farming made exciting again with high returns and high APR. Topping it all off with the sleekest and most user friendly interface!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="feature__box feature__box--3">
+            <div class="icon icon-3">
+              <img src="assets/images/ticket.svg" alt="Lottery Ticket" style="height: 128px;">
+            </div>
+            <div class="feature__box__wrapper">
+              <div class="feature__box--content feature__box--content-3">
+                <h3>Lottery Ticket</h3>
+                <p class="paragraph dark">Get yourself into the winning game with exciting lottery and win prizes. Try your luck today!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="feature__box feature__box--4">
+            <div class="icon icon-4">
+              <img src="assets/images/ido.svg" alt="IDO" style="height: 128px;">
+            </div>
+            <div class="feature__box__wrapper">
+              <div class="feature__box--content feature__box--content-4">
+                <h3>IDO</h3>
+                <p class="paragraph dark">Initial DeFi Offering is your doorway for potential upcoming projects. Finding new gems is easier than ever!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--feature section end-->
+
+  <!--video section start-->
+  <div class="video">
+    <div class="video__wrapper">
+      <div class="container">
+          <img src="assets/images/ogee-bg.svg" alt="image" class="phone">
+      </div>
+    </div>
+  </div>
+  <!--video section end-->
+
+  <!--growth section start-->
+  <section class="growth">
+    <div class="growth__wrapper">
+      <div class="container">
+        <h2 class="section-heading color-black">Ogee Finance Features.</h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="growth__box">
+              <div class="icon">
+                <img src="assets/images/swap2.svg" alt="Swap" style="height: 120px;">
+              </div>
+              <div class="content">
+                <h3>Token Swaps</h3>
+                <p class="paragraph dark">Simplify the process of integrating Ogee Finance into your project.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="growth__box">
+              <div class="icon">
+                <img src="assets/images/flash-swap2.svg" alt="Flash Swap" style="height: 120px;">
+              </div>
+              <div class="content">
+                <h3>Flash Swaps</h3>
+                <p class="paragraph dark">Withdraw the reserves of any HRC20 token on Ogee Finance and execute arbitrary logic.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="growth__box">
+              <div class="icon">
+                <img src="assets/images/liquidity.svg" alt="Liquidity" style="height: 120px;">
+              </div>
+              <div class="content">
+                <h3>Pool Liquidity</h3>
+                <p class="paragraph dark">A step-by-step guide to getting started building interfaces with Ogee Finance.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="growth__box">
+              <div class="icon">
+                <img src="assets/images/oracle.svg" alt="Oracles" style="height: 120px;">
+              </div>
+              <div class="content">
+                <h3>Oracles</h3>
+                <p class="paragraph dark">Highly decentralized, manipulation-resistant, on-chain price feeds.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="growth__box">
+              <div class="icon">
+                <img src="assets/images/farm2.svg" alt="Farm" style="height: 120px;">
+              </div>
+              <div class="content">
+                <h3>Yield Farming</h3>
+                <p class="paragraph dark">Goal is to maximize a rate of return on capital by leveraging different DeFi protocols.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="growth__box">
+              <div class="icon">
+                <img src="assets/images/pool.svg" alt="Pool" style="height: 120px;">
+              </div>
+              <div class="content">
+                <h3>Smart Staking</h3>
+                <p class="paragraph dark">Smart Pools allow Huobi ECO Chain projects token solo staking.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="button__wrapper">
+            <a href="#" class="button">
+              <span>CONNECT TO WALLET </span>
+            </a>
+            <a href="#" class="button">
+              <span>LEARN MORE </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--growth section end-->
+
+  <!--step section start-->
+  <section class="step" id="how-to-connect">
+    <div class="step__wrapper">
+      <div class="container">
+        <h2 class="section-heading color-black">How to Connect Wallet</h2>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="step__box">
+              <div class="image">
+                <img src="assets/images/wallet/heco-chain.png" alt="image">
+              </div>
+              <div class="content">
+                <h3>EASY TO<span>HECO Network</span></h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="step__box">
+              <div class="image">
+                <img src="assets/images/wallet/add-network.png" alt="image">
+              </div>
+              <div class="content">
+                <h3>SIMPLE TO<span>Add Network</span></h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="step__box">
+              <div class="image">
+                <img src="assets/images/wallet/switch-network.png" alt="image">
+              </div>
+              <div class="content">
+                <h3>CONNECT TO<span>Switch Network</span></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="button__wrapper">
+            <a href="#" class="button">
+              <span>CONNECT TO WALLET </span>
+            </a>
+            <a href="#" class="button">
+              <span>LEARN MORE </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--step section end-->
+
+  <!--growth section start-->
+  <section class="growth" id="smart-contract">
+    <div class="growth__wrapper">
+      <div class="container">
+        <h2 class="section-heading color-black">Smart Contract Addresses</h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="growth__box">
+              <div class="icon">
+                <img src="assets/icon/ogee.svg" alt="Ogee Token Contract" style="height: 120px;">
+              </div>
+              <div class="content">
+                <h3>Ogee Token (OGE)</h3>
+                <p class="paragraph dark"><a href="https://hecoinfo.com/token/0x81c3bb76508bb4668fd38dda71655972f4a3526f">0x81c3BB76508BB4668fD38DDA71655972F4a3526F</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="growth__box">
+              <div class="icon">
+                <img src="assets/icon/ticket.svg" alt="Lottery Ticket Contract" style="height: 120px;">
+              </div>
+              <div class="content">
+                <h3>Lottery Ticket </h3>
+                <p class="paragraph dark">0x</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="growth__box">
+              <div class="icon">
+                <img src="assets/icon/masterchef.svg" alt="MasterChef Contract" style="height: 120px;">
+              </div>
+              <div class="content">
+                <h3>MasterChef</h3>
+                <p class="paragraph dark">0x</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="growth__box">
+              <div class="icon">
+                <img src="assets/icon/smartchef.svg" alt="SmartChef Contract" style="height: 120px;">
+              </div>
+              <div class="content">
+                <h3>SmartChef</h3>
+                <p class="paragraph dark">0x</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="growth__box">
+              <div class="icon">
+                <img src="assets/icon/factory.svg" alt="Factory Contract" style="height: 120px;">
+              </div>
+              <div class="content">
+                <h3>OgeeSwap Factory</h3>
+                <p class="paragraph dark">0x</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="growth__box">
+              <div class="icon">
+                <img src="assets/icon/router.svg" alt="Router Contract" style="height: 120px;">
+              </div>
+              <div class="content">
+                <h3>OgeeSwap Router</h3>
+                <p class="paragraph dark">0x</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="growth__box">
+              <div class="icon">
+                <img src="assets/icon/ido.svg" alt="IDO Contract" style="height: 120px;">
+              </div>
+              <div class="content">
+                <h3>IDO Contract</h3>
+                <p class="paragraph dark">0x</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="button__wrapper">
+            <a href="#" class="button">
+              <span>CONNECT TO WALLET </span>
+            </a>
+            <a href="#" class="button">
+              <span>LEARN MORE </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--growth section end-->
+
+  <!--client section start-->
+  <section class="clients-sec" id="partners">
+    <div class="container">
+      <h2 class="section-heading color-black">Partners</h2>
+      <div class="clients">
+        <div class="swiper-container clients-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide clients-slide">
+              <a href="#"><img src="assets/icon/logo-grey.svg" alt="image" style="width: 300px;"></a>
+            </div>
+            <div class="swiper-slide clients-slide">
+              <a href="#"><img src="assets/icon/logo-grey.svg" alt="image" style="width: 300px;"></a>
+            </div>
+            <div class="swiper-slide clients-slide">
+              <a href="#"><img src="assets/icon/logo-grey.svg" alt="image" style="width: 300px;"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--client section end-->
+
+  <!--roadmap section start-->
+  <section class="roadmap" id="roadmap">
+    <div class="roadmap__wrapper">
+      <h2 class="section-heading color-black">Roadmap</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="roadmap__single roadmap__single-1">
+              <div class="icon">
+                <img src="assets/images/swap2.svg" alt="Swap" style="height: 120px;">
+              </div>
+              <h4>Ogee AMM</h4>
+              <div class="list">
+                <ul>
+                  <li> <img src="assets/icon/tick.svg" alt="Complete" style="height: 16px; padding-right:8px;"> IPFS Deployed</li>
+                  <li> <img src="assets/icon/tick.svg" alt="Complete" style="height: 16px; padding-right:8px;"> Improved UX</li>
+                  <li> <img src="assets/icon/tick.svg" alt="Complete" style="height: 16px; padding-right:8px;"> Faster Site</li>
+                  <li> <img src="assets/icon/tick.svg" alt="Complete" style="height: 16px; padding-right:8px;"> Mobile Friendly</li>
+                  <li> <img src="assets/icon/process.svg" alt="Not Complete" style="height: 16px; padding-right:8px;"> Analytics</li>
+                  <li> <img src="assets/icon/process.svg" alt="Not Complete" style="height: 16px; padding-right:8px;"> AMM Audit</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="roadmap__single roadmap__single-2">
+              <div class="icon">
+                <img src="assets/images/farm2.svg" alt="Swap" style="height: 120px;">
+              </div>
+              <h4>Ogee Farm</h4>
+              <div class="list">
+                <ul>
+                  <li> <img src="assets/icon/tick.svg" alt="Complete" style="height: 16px; padding-right:8px;"> IPFS Deployed</li>
+                  <li> <img src="assets/icon/tick.svg" alt="Complete" style="height: 16px; padding-right:8px;"> Personal Dashboard</li>
+                  <li> <img src="assets/icon/tick.svg" alt="Complete" style="height: 16px; padding-right:8px;"> Mobile Friendly</li>
+                  <li> <img src="assets/icon/tick.svg" alt="Complete" style="height: 16px; padding-right:8px;"> Smart Pool</li>
+                  <li> <img src="assets/icon/tick.svg" alt="Complete" style="height: 16px; padding-right:8px;"> Community Pools</li>
+                  <li> <img src="assets/icon/process.svg" alt="Not Complete" style="height: 16px; padding-right:8px;"> Farm Audit</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="roadmap__single roadmap__single-3">
+              <div class="icon">
+                <img src="assets/images/liquidity.svg" alt="Other Products" style="height: 120px;">
+              </div>
+              <h4>Other Products</h4>
+              <div class="list">
+                <ul>
+                  <li> <img src="assets/icon/process.svg" alt="Not Complete" style="height: 16px; padding-right:8px;"> Lottery Ticket</li>
+                  <li> <img src="assets/icon/box.svg" alt="Not Complete" style="height: 16px; padding-right:8px;"> HUSD - Lottery Ticket</li>
+                  <li> <img src="assets/icon/tick.svg" alt="Complete" style="height: 16px; padding-right:8px;"> IDO: Initial DeFi Offering</li>
+                  <li> <img src="assets/icon/process.svg" alt="Not Complete" style="height: 16px; padding-right:8px;"> NFT Ecosystem</li>
+                  <li> <img src="assets/icon/box.svg" alt="Not Complete" style="height: 16px; padding-right:8px;"> Customizable User Profile</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--roadmap section end-->
+
+  <!--questions section start-->
+  <section class="questions" id="faq">
+    <div class="questions__wrapper">
+      <div class="container">
+        <h2 class="section-heading color-black">Some frequently asked questions.</h2>
+        <div class="row align-items-lg-center">
+          <div class="col-lg-6 order-2 order-lg-1">
+            <div id="accordion">
+              <div class="card" id="card-1">
+                <div class="card-header" id="heading-1">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse-1" aria-expanded="true"
+                      aria-controls="collapse-1">
+                      <img src="assets/icon/tick-pink.svg" alt="Icon" style="height: 16px; padding-right:8px;"> What is Ogee Finance?
+                    </button>
+                  </h5>
+                </div>
+
+                <div id="collapse-1" class="collapse show" aria-labelledby="heading-1" data-parent="#accordion">
+                  <div class="card-body">
+                    <p class="paragraph">Uniswap is a protocol for creating liquidity and trading HRC-20 tokens on Huobi ECO Chain .
+                      It eliminates trusted intermediaries and unnecessary forms of rent extraction, allowing for fast, efficient trading.
+                      Where it makes tradeoffs decentralization, censorship resistance, and security are prioritized.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="card-2">
+                <div class="card-header" id="heading-2">
+                  <h5 class="mb-0 hidden">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-2"
+                      aria-expanded="false" aria-controls="collapse-2">
+                      <img src="assets/icon/tick-pink.svg" alt="Icon" style="height: 16px; padding-right:8px;"> How do I use Ogee Finance?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapse-2" class="collapse" aria-labelledby="heading-2" data-parent="#accordion">
+                  <div class="card-body">
+                    <p class="paragraph">First you’ll need an Huobi ECO Chain Wallet and some HECO. Once completed,
+                      head over to the app to start using the protocol to provide liquidity or swap tokens.
+                      Remember that each transaction on Huobi ECO Chain costs HECO (this is called the “gas fee” and it’s paid to miners to keep the network running).</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="card-3">
+                <div class="card-header" id="heading-3">
+                  <h5 class="mb-0 hidden">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-3"
+                      aria-expanded="false" aria-controls="collapse-3">
+                      <img src="assets/icon/tick-pink.svg" alt="Icon" style="height: 16px; padding-right:8px;"> How does Ogee Finance work?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapse-3" class="collapse" aria-labelledby="heading-3" data-parent="#accordion">
+                  <div class="card-body">
+                    <p class="paragraph">Ogee Finance is an automated liquidity protocol. In practical terms this means there are template smart contracts that define a standard
+                      way to make liquidity pools and corresponding markets that are compatible with eachother. There is no orderbook, no centralized party and no central facilitator of trade.
+                      Each pool is defined by a smart contract that includes a few functions to enable swapping tokens, adding liquidity and more.
+                      At its core each pool uses the function x*y=k to maintain a curve along which trades can happen.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="card-4">
+                <div class="card-header" id="heading-4">
+                  <h5 class="mb-0 hidden">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-4"
+                      aria-expanded="false" aria-controls="collapse-4">
+                       <img src="assets/icon/tick-pink.svg" alt="Icon" style="height: 16px; padding-right:8px;"> How are prices determined?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapse-4" class="collapse" aria-labelledby="heading-4" data-parent="#accordion">
+                  <div class="card-body">
+                    <p class="paragraph">Prices are determined by the amount of each token in a pool. The smart contract maintains a constant using the following function: x*y=k.
+                      In this case x = token0, y = token1, k = constant. For each trade a certain amount of tokens are removed from the pool for an amount of the other token.
+                      To maintain k, the balances held by the smart contract are adjusted during the execution of the trade, therefore changing the price.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="card-5">
+                <div class="card-header" id="heading-5">
+                  <h5 class="mb-0 hidden">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-5"
+                      aria-expanded="false" aria-controls="collapse-5">
+                      <img src="assets/icon/tick-pink.svg" alt="Icon" style="height: 16px; padding-right:8px;"> What is the Smart Pools?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapse-5" class="collapse" aria-labelledby="heading-5" data-parent="#accordion">
+                  <div class="card-body">
+                    <p class="paragraph">Smart Pools allow Huobi ECO Chain projects to bootstrap adoption by distributing a portion of their tokens to OGEE token holders.
+                        Smart Pools is split into two sections: Core and Community. 1. Core will be initially selected by the Ogee Finance team.
+                        2. Community will be projects that pass a community vote on the governance portal.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="card-6">
+                <div class="card-header" id="heading-6">
+                  <h5 class="mb-0 hidden">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-6"
+                      aria-expanded="false" aria-controls="collapse-6">
+                      <img src="assets/icon/tick-pink.svg" alt="Icon" style="height: 16px; padding-right:8px;"> How to Win Lottery?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapse-6" class="collapse" aria-labelledby="heading-6" data-parent="#accordion">
+                  <div class="card-body">
+                    <p class="paragraph">To win the lottery jackpot (50% of the entire lottery pool), users need to match all 4 numbers on their tickets in the same position as the 4 winning numbers.
+                        If you don’t match all 4, no need to worry. As long as you match 2 or more numbers in the correct position, you are guaranteed to win a reward..</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="card-7">
+                <div class="card-header" id="heading-7">
+                  <h5 class="mb-0 hidden">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-7"
+                      aria-expanded="false" aria-controls="collapse-7">
+                      <img src="assets/icon/tick-pink.svg" alt="Icon" style="height: 16px; padding-right:8px;"> How to Join IDO: Initial DeFi Offering?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapse-7" class="collapse" aria-labelledby="heading-7" data-parent="#accordion">
+                  <div class="card-body">
+                    <p class="paragraph">Buy new tokens using OGE-HT LP tokens.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2">
+            <div class="questions-img">
+              <img src="assets/images/ogee-shop.svg" alt="Ogee Finance Shop">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--questions section end-->
+
+
+  <!--footer start-->
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="footer__info">
+              <div class="footer__info--logo">
+                <img src="assets/images/logo.svg" alt="Logo" style="height: 48px;">
+              </div>
+              <div class="footer__info--content">
+                <p class="paragraph dark">Ogee Finance is the best AMM and Yield Farm on Huobi ECO Chain.</p>
+                <div class="social">
+                  <ul>
+                    <li class="twitter"><a href="https://twitter.com/ogee_finance"><i class="fab fa-twitter"></i></a></li>
+                    <li class="telegram"><a href="https://t.me/ogeefinance"><i class="fab fa-telegram"></i></a></li>
+                    <li class="github"><a href="https://github.com/ogeefinance"><i class="fab fa-github"></i></a></li>
+                    <li class="medium"><a href="#"><i class="fab fa-medium"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="footer__content-wrapper">
+              <div class="footer__list">
+                <ul>
+                  <li>Products</li>
+                  <li><a href="#">AMM</a></li>
+                  <li><a href="#">Farm</a></li>
+                  <li><a href="#">Pools</a></li>
+                  <li><a href="#">Lottery</a></li>
+                  <li><a href="#">IDO</a></li>
+                </ul>
+              </div>
+              <div class="footer__list">
+                <ul>
+                  <li>Useful Link</li>
+                  <li><a href="#">Docs</a></li>
+                  <li><a href="#how-to-connect">How to Connect</a></li>
+                  <li><a href="#smart-contract">Smart Contract</a></li>
+                  <li><a href="#roadmap">Roadmap</a></li>
+                  <li><a href="#faq">FAQ</a></li>
+                </ul>
+              </div>
+              <div class="footer__list">
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="footer__copy">
+            <h6>&copy; Ogee Finance</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--footer end-->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script>
+    $(window).on('load', function () {
+      $("body").addClass("loaded");
+    });
+  </script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
